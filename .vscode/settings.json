@@ -1,0 +1,6 @@
+{
+    "ada.trace.server": "verbose",
+    "ada.projectFile": "calcul.gpr",
+    "ada.enableDiagnostics": true,
+    "ada.defaultCharset": "utf-8"
+}
