@@ -1,5 +1,4 @@
 with AUnit.Assertions;
-with Calcul;
 
 package body Calcul.Tests is
    function Name (T : Test) return AUnit.Message_String is

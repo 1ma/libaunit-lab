@@ -1,4 +1,3 @@
-with AUnit;
 with AUnit.Simple_Test_Cases;
 
 package Calcul.Tests is
@@ -6,5 +5,5 @@ package Calcul.Tests is
 
    function Name (T : Test) return AUnit.Message_String;
 
-   procedure Run_test (T : in out Test);
+   procedure Run_Test (T : in out Test);
 end Calcul.Tests;
