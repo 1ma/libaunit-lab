@@ -16,7 +16,7 @@ package body Calcul.Tests is
    function Name (T : Test) return AUnit.Message_String is
       pragma Unreferenced (T);
    begin
-      return AUnit.Format ("Calcul Unit Tests");
+      return AUnit.Format ("Calcul Packge Tests");
    end Name;
 
    procedure Register_Tests (T: in out Test) is

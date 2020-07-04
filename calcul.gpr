@@ -13,7 +13,7 @@ project Calcul is
 
    package Compiler is
       for Switches ("ada") use
-        ("-gnatVa", "-gnatwa", "-g", "-O2",
+        ("-gnatVa", "-gnatwa", "-g", "-O0",
          "-gnata", "-gnato", "-fstack-check");
    end Compiler;
 
