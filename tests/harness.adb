@@ -2,10 +2,18 @@ with Ada.Command_Line;
 with AUnit; use AUnit;
 with AUnit.Reporter.Text;
 with AUnit.Run;
-with La_Suite;
+with AUnit.Test_Suites;
+with Calcul.Tests;
 
 procedure Harness is
-   function Runner is new AUnit.Run.Test_Runner_With_Status (La_Suite.Suite);
+   function La_Suite return AUnit.Test_Suites.Access_Test_Suite is
+      Ret : constant AUnit.Test_Suites.Access_Test_Suite := new AUnit.Test_Suites.Test_Suite;
+   begin
+      Ret.Add_Test (new Calcul.Tests.Test);
+      return Ret;
+   end La_Suite;
+
+   function Runner is new AUnit.Run.Test_Runner_With_Status (La_Suite);
 
    Result : AUnit.Status;
    Reporter : AUnit.Reporter.Text.Text_Reporter;
