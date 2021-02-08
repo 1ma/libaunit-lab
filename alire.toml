@@ -1,0 +1,12 @@
+name = "harness"
+description = "A toy project to explore Alire and the AUnit testing framework"
+version = "0.0.0"
+
+authors = ["Marcel Hernandez"]
+maintainers = ["Marcel Hernandez <e6990620@gmail.com>"]
+maintainers-logins = ["1ma"]
+
+executables = ["harness"]
+
+[[depends-on]]
+aunit = "^21.0.0"
